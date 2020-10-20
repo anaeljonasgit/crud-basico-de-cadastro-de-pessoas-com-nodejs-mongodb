@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Crud Básico de Cadastro de Pessoas | Anael Jonas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../Pages/Index/style.css">
+	<script type="text/javascript" src="../Libs/Axios.js"></script>
+
+</head>
+<body>
+
+	<div id="App">
+		<div id="ContainerAdicionar">
+			<h3>Nova pessoa</h3>
+			<div id="Adicionar">
+				<input type="text" id="nome" placeholder="Nome">
+				<input type="email" id="email" placeholder="E-mail">
+				<input type="number" id="idade" placeholder="Idade" onchange="VerificarIdade()" value="20">
+				<input type="text" id="status" placeholder="Frase">
+				<button onclick="CadastrarPessoa()">Cadastrar</button>
+			</div>
+		</div>
+		<h1 id="Menssage">Pessoas cadastradas no sistema<br>(Clique para editar)</h1>
+		<div id="Pessoas"></div>
+	</div>
+
+	<nav>
+		<h3>Anael Jonas | Crud Básico de Pessoas</h3>
+	</nav>
+
+	<script type="text/javascript" src="../Pages/Index/script.js"></script>
+
+</body>
+</html>
